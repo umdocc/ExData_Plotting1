@@ -1,0 +1,124 @@
+0.99*0.001/(0.99*0.001+(1-0.99)*(1-0.001))
+(0.99*0.001)/(0.99*0.001+(1-0.99)*(1-0.001))
+(0.99*0.001)/((0.99*0.001)+(1-0.99)*(1-0.001))
+100000-100
+99900*0.01
+?plotOutput
+library(shiny)
+?plotOutput
+cube <- function(x, n) {
+x^3
+}
+cube(3)
+x <- 1:10
+if(x > 5) {
+x <- 0
+}
+f <- function(x) {
+g <- function(y) {
+y + z
+}
+z <- 4
+x + g(x)
+}
+z <- 10
+f(3)
+x <- 5
+y <- if(x < 3) {
+NA
+} else {
+10
+}
+y
+library(nlme)
+library(lattice)
+xyplot(weight ~ Time | Diet, BodyWeight)
+?llines
+?axis
+?llines
+library(lattice)
+library(datasets)
+data(airquality)
+p <- xyplot(Ozone ~ Wind | factor(Month), data = airquality)
+?splom
+?trellis.par.set
+?par
+library(datasets)
+data(airquality)
+install.packages("ggplot2")
+library(ggplot2)
+?transform
+airquality = transform(airquality, Month = factor(Month))
+View(airquality)
+?factor
+class(airquality$Month)
+library(ggplot2)
+g <- ggplot(movies, aes(votes, rating))
+print(g)
+qplot(votes, rating, data = movies)
+qplot(votes, rating, data = movies, smooth = "loess)
+qplot(votes, rating, data = movies) + stats_smooth("loess")
+library(ggplot2)
+qplot(votes, rating, data = movies) + stats_smooth("loess")
+qplot(votes, rating, data = movies) + geom_smooth
+qplot(votes, rating, data = movies, smooth="loess")
+?qplot
+qplot(votes, rating, data = movies) + geom_smooth()
+?xyplot
+?lpoints
+library(ggplot2)
+g <- ggplot(movies, aes(votes, rating))
+print(g)
+setwd("C:/Users/Cuong/Google Drive/Desktop/Data Science/Exploratory Data Analysis")
+?read.txt
+data <- read.table(household_power_consumption.txt, header = TRUE)
+data <- read.table("household_power_consumption.txt", header = TRUE)
+View(data)
+data <- read.table("household_power_consumption.txt", header = TRUE, sep =";")
+View(data)
+data[data$Date = 16/12/2006]
+data[data$Date = "16/12/2006"]
+data[data$Date == 16/12/2006]
+test <- data[data$Date == 16/12/2006]
+View(test)
+View(test)
+data$Date
+test <- data[data$Date == 16/12/2007]
+View(data)
+class(data$Date)
+?as.Date
+as.Date(data$Date)
+class(data$Date)
+data$Date<-as.Date(data$Date)
+class(data$Date)
+data$Date > 1/1/2006
+16/12/2006 > 1/1/2006
+data$Date[1]
+data$Date[2]
+View(data)
+data <- read.table("household_power_consumption.txt", header = TRUE, sep=";")
+x <- 16/12/2006
+class(x)
+View(data)
+data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
+View(data)
+class(data$Date)
+data$Date>2006-12-15
+data$Date>2006-12-16
+data$Date>2006-12-17
+data$Date> as.Date("2006-12-17")
+data$Date> as.Date("2006-12-16")
+newData <- data[(data$Date >= as.Date("2007-02-01") & data$Date < as.Date("2007-02-03"))]
+test <- data[data$Date == "?"]
+newData <- data[,(data$Date >= as.Date("2007-02-01") & data$Date < as.Date("2007-02-03"))]
+newData <- data[,(data$Date >= as.Date("2007-02-01") && data$Date < as.Date("2007-02-03"))]
+View(newData)
+newData <- data[,(data$Date >= as.Date("2007-02-01")]
+newData <- data[,data$Date >= as.Date("2007-02-01")]
+View(data)
+newData <- data[data$Date >= as.Date("2007-02-01")]
+newData <- subset(data, Date >=as.Date"2007-02-01")
+newData <- subset(data, data$Date >=as.Date"2007-02-01")
+newData <- subset(data, Date >=as.Date("2007-02-01"))
+View(newData)
+newData <- subset(data, (Date >=as.Date("2007-02-01") & Date <=as.Date("2007-02-02"))
